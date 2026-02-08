@@ -3,6 +3,14 @@ const should = chai.should();
 const { add, isEven, subtract, multiply, divide } = require("../src/mylib");
 
 describe("mylib.js (should skeleton)", () => {
+    before(() => {
+        console.log("Starting tests");
+    });
+
+    after(() => {
+        console.log("Tests completed");
+    });
+    
     describe("add()", () => {
         it("should add two numbers correctly", () => {
             add(2, 3).should.equal(5)
