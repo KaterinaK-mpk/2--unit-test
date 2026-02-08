@@ -1,6 +1,7 @@
 // index.js
 const { add, isEven, subtract, multiply, divide } = require("./src/mylib");
 
+// runs the function in try catch to handle possible errors
 function safeRun(label, fn) {
   try {
     const result = fn();
